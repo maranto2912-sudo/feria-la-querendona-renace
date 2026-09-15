@@ -118,7 +118,7 @@
   }
   .flag-fig { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 8px; }
   .flag {
-    width: clamp(88px, 12vw, 108px); height: auto; aspect-ratio: 3 / 2; display: block;
+    width: clamp(88px, 12vw, 108px); height: auto; aspect-ratio: 2 / 1; display: block; object-fit: contain;
     border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 10px 24px -14px rgb(var(--shadow-rgb) / 0.55);
   }
 
@@ -578,13 +578,7 @@
         <figcaption>Kevin Sáchica en terreno</figcaption>
       </figure>
       <figure class="flag-fig">
-        <svg class="flag" viewBox="0 0 90 60" role="img" aria-label="Bandera de Pereira">
-          <rect width="90" height="60" fill="#D8322A"/>
-          <polygon points="0,0 0,60 55,30" fill="#F5C400"/>
-          <path d="M12,36 C9,27.5 11.5,18.5 20.5,16.5 C26.5,15 31.5,16.8 32.5,21
-                   C28.2,19.8 24,21 22,25.2 C25.2,26.4 27.2,29.4 27.2,33.4 C22,35.4 15,35.4 12,36 Z" fill="#D8322A"/>
-          <circle cx="21.5" cy="16" r="2.4" fill="#D8322A"/>
-        </svg>
+        <img class="flag" src="bandera-pereira.svg" alt="Bandera de Pereira">
         <figcaption>Bandera de Pereira</figcaption>
       </figure>
     </div>
@@ -688,6 +682,7 @@
         <span class="dot" style="color:var(--muted);padding:0 6px">·</span>
         <button class="foot-link" id="admOpen" type="button">Panel</button>
       </span>
+      <span style="font-size:11px;opacity:.75">Ilustración de la bandera de Pereira: Wikimedia Commons (CC BY-SA 3.0)</span>
     </div>
   </footer>
 </div>
